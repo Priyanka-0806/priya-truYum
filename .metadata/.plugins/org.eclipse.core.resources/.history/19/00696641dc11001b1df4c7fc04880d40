@@ -1,0 +1,30 @@
+import java.util.*;
+public class Division
+{
+      	public String divideTwoNumbers(int number1,int number2){
+            String op="";
+            try{
+                //to monitor Exception
+            	return op ="The answer is "+(number1/number2);
+            }
+            catch(ArithmeticException e){
+                return op= "Division by zero is not possible";
+            }
+            finally{
+               return op +="Thanks for using the application";
+            }
+    return op;
+}   
+    public static void main (String[] args) {
+        /* code */
+        int a,b;
+        Division d=new Division();
+        Scanner inp=new Scanner(System.in);
+        System.out.println("Enter the numbers");
+        a=inp.nextInt();
+        b=inp.nextInt();
+        String str;
+        str=d.divideTwoNumbers(a,b);
+    }
+    
+}

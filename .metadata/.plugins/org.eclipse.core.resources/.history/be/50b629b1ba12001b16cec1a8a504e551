@@ -1,0 +1,18 @@
+import java.util.HashMap;
+import java.util.Map;
+public class HashMapDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		@SuppressWarnings("unused")
+		Map<String,Integer> map = new HashMap<>();
+		map.put("Ramesh", 95);
+		map.put("Suresh",65);
+		map.put("Sita",63);
+		map.put("Diya",75);
+		System.out.println("The Hash Map is: "+map);
+		
+
+	}
+
+}
